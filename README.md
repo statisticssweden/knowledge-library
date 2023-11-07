@@ -12,7 +12,7 @@ Resurser lagras under katalogen ```Resources``` och länar till *mallar* och *ex
 Resurser lagras i katalogen Resources. Exempel på resurser kan vara kodfiler, länkar eller instruktioner. Filer som ligger direkt i Resources är resurser som gäller hela kunskapsbiblioteket och skall läggas till sparsamt.
 
 #### Resurskatalog
-Resurser skall i vanliga fall läggas i en underkatalog till Resources. Katalogens namn blir namnet på resursen.
+Resurser skall i de allra flesta fall läggas i en underkatalog till Resources. Katalogens namn blir namnet på resursen.
 Om man vill lägga in en resurs med namnet Kodning så blir katalogstrukturen enligt nedan. 
 
     Resources/Kodning
@@ -22,9 +22,16 @@ Beskriv resursen i en [markdownfil](https://www.markdownguide.org/basic-syntax/)
 
     Resources/Kodning/README.md
 
+##### Resursfiler
+Placera resursfiler i katalogen för resursen.
+Exempel
 
-### Filtyper
+    Resources/Kodning/etl.py <-- python-fil för att utföra ETL
+    Resources/Kodning/Kodning.ipynb <-- Jupyter Notebook som utför kodning
+    Resources/Kodning/kodning.url <-- Fil som innehåller länk till https://sps.scb.se/sites/vstod/statprod/Sidor/SPS_Process-5-2-1.aspx.
+
+##### Filtyper
 Lagra i första hand textfiler i kunskapsbiblioteket.
-Lagra inga stora filer i kunskapsbiblioteket. Stora filer lagras på annan lämplig plats. Skall en användare av kunspasbiblioteket få tillgång till denna fil så går det att lägga in en fil av typen länk (.url) som beskrivs nedan. Alternativt så går det att lägga in en *länk* i en Markdown-fil (.md). 
+Lagra inga stora filer i kunskapsbiblioteket som t ex filmer, presentationer, bilder. Stora filer lagras på annan lämplig plats. Skall en användare av kunspasbiblioteket få tillgång till denna fil så går det att lägga in en fil av typen länk (.url) som beskrivs nedan. Alternativt så går det att lägga in en *länk* i en markdown-fil (.md) som t ex README.md i resurskatalogen. 
 Lagra ingen data i kunskapsbiblioteket
 
