@@ -2,7 +2,7 @@
 
 ## Struktur på innehåll i kunskapsbiblioteket
 Kunskapsbiblioteket innehåller två huvudtyper av information. Den första typen är *resurser* och det andra är länkar till *mallar* eller *exempelprojekt*.
-Resurser lagras under katalogen ```Resources``` och länar till *mallar* och *exempelprojekt* lagras i katalogen ```ProjectLinks``` 
+Resurser lagras under katalogen ```Resources``` och länkar till *mallar* och *exempelprojekt* lagras i katalogen ```ProjectLinks``` 
 
     README.md <-- Denna fil
     Resources <-- Katalog för resurser
@@ -42,7 +42,7 @@ Lagra inga stora filer i kunskapsbiblioteket som t ex filmer, presentationer, bi
 Lagra ingen data i kunskapsbiblioteket. Data skall läsas från andra källor via koden i resursen.
 
 ##### Filtyp Markdown (.md)
-Markdown är en fyltyp som används för att skriva formatterad text på ett sätt som både förstås av människor och maskiner. Syntax beskrivs bland annat [här](https://www.markdownguide.org/basic-syntax/). Markdownfiler har filändelsen .md och innhållet kan visas på GitHub och i Balsam
+Markdown är en filtyp som används för att skriva formatterad text på ett sätt som både förstås av människor och maskiner. Syntax beskrivs bland annat [här](https://www.markdownguide.org/basic-syntax/). Markdownfiler har filändelsen .md och innhållet kan visas på GitHub och i Balsam
 
 ##### Filtyp Länk (.url)
 Filtypen .url är ett sätt att lagra en länk i en fil. Balsam har stöd för att visa resurser av denna typ. 
