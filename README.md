@@ -35,3 +35,18 @@ Lagra i första hand textfiler i kunskapsbiblioteket.
 Lagra inga stora filer i kunskapsbiblioteket som t ex filmer, presentationer, bilder. Stora filer lagras på annan lämplig plats. Skall en användare av kunspasbiblioteket få tillgång till denna fil så går det att lägga in en fil av typen länk (.url) som beskrivs nedan. Alternativt så går det att lägga in en *länk* i en markdown-fil (.md) som t ex README.md i resurskatalogen. 
 Lagra ingen data i kunskapsbiblioteket
 
+##### Filtyp Markdown (.md)
+Markdown är en fyltyp som används för att skriva formatterad text på ett sätt som både förstås av människor och maskiner. Syntax beskrivs bland annat [här](https://www.markdownguide.org/basic-syntax/). Markdownfiler har filändelsen .md och innhållet kan visas på GitHub och i Balsam
+
+##### Filtyp Länk (.url)
+Filtypen .url är ett sätt att lagra en länk i en fil. Balsam har stöd för att visa resurser av denna typ. 
+Filen innehåller två rader. 
+- Den första raden innehåller texten ```[InternetShortcut]```.
+- Den andra raden innehåller texten ```URL=``` följt av url-en
+
+Syntax 
+
+    [InternetShortcut]
+    URL=https://scb.se
+
+
