@@ -9,18 +9,24 @@ Resurser lagras under katalogen ```Resources``` och länar till *mallar* och *ex
     ProjectLinks <-- Katalog för länkar till mallar och exempelprojekt
 
 ### Resurser
-Resurser lagras i katalogen Resources. Exempel på resurser kan vara kodfiler, länkar eller instruktioner. Filer som ligger direkt i Resources är resurser som gäller hela kunskapsbiblioteket och skall läggas till sparsamt.
+Resurser lagras i katalogen Resources. Exempel på resurser kan vara kodfiler, länkar eller instruktioner. Filer som ligger direkt i Resources är resurser som gäller hela kunskapsbiblioteket och skall läggas till sparsamt. Exempel på en sådan fil kan vara en länk till SCBs verksamhetsstöd.
 
 #### Resurskatalog
-Resurser skall i de allra flesta fall läggas i en underkatalog till Resources. Katalogens namn blir namnet på resursen.
-Om man vill lägga in en resurs med namnet Kodning så blir katalogstrukturen enligt nedan. 
+Resurser skall i de allra flesta fall läggas i en underkatalog till katalogen ```Resources```. Katalogens namn blir namnet på resursen.
+Om man vill lägga in en resurs med namnet Kodning skapar man katalogstrukturen enligt nedan. 
 
     Resources/Kodning
 
 ##### Beskrivning i README.md
-Beskriv resursen i en [markdownfil](https://www.markdownguide.org/basic-syntax/) som heter README.md och som ligger i resursens mapp. 
+Resursen beskrivs i en [markdownfil](https://www.markdownguide.org/basic-syntax/) som heter README.md och som läggs i resursens mapp. Denna fil måste läggas till manuellt.
 
     Resources/Kodning/README.md
+
+Exempel på innehåll
+
+    # Kodning
+    Denna resurs innehåller ett exempel på hur man utför kodning
+    Kodning beskrivs i SCBs statistikproduktionsprocess som du kan läsa om [här](https://sps.scb.se/sites/vstod/statprod/Sidor/SPS_Process-5-2-1.aspx)
 
 ##### Resursfiler
 Placera resursfiler i katalogen för resursen.
@@ -33,7 +39,7 @@ Exempel
 ##### Filtyper
 Lagra i första hand textfiler i kunskapsbiblioteket.
 Lagra inga stora filer i kunskapsbiblioteket som t ex filmer, presentationer, bilder. Stora filer lagras på annan lämplig plats. Skall en användare av kunspasbiblioteket få tillgång till denna fil så går det att lägga in en fil av typen länk (.url) som beskrivs nedan. Alternativt så går det att lägga in en *länk* i en markdown-fil (.md) som t ex README.md i resurskatalogen. 
-Lagra ingen data i kunskapsbiblioteket
+Lagra ingen data i kunskapsbiblioteket. Data skall läsas från andra källor via koden i resursen.
 
 ##### Filtyp Markdown (.md)
 Markdown är en fyltyp som används för att skriva formatterad text på ett sätt som både förstås av människor och maskiner. Syntax beskrivs bland annat [här](https://www.markdownguide.org/basic-syntax/). Markdownfiler har filändelsen .md och innhållet kan visas på GitHub och i Balsam
