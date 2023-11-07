@@ -2,17 +2,24 @@
 
 ## Instruktioner
 
-### Struktur
-Kunskapsbiblioteket innehåller två huvudkataloger, Resources samt ProjectLinks.
+### Struktur på innehåll i kunskapsbiblioteket
+Kunskapsbiblioteket innehåller två huvudtyper av information. Den första typen är resurser och det andra är länkar till *mallar* eller *exempelprojekt*.
+Resurser lagras under katalogen ```Resources``` och länar till *mallar* och *exempelprojekt* lagras i katalogen ```ProjectLinks``` 
 
-#### Resources
+    README.md <-- Denna fil
+    Resources <-- Katalog för resurser
+    ProjectLinks <-- Katalog för länkar till mallar och exempelprojekt
+
+#### Resurser
 Resources innehåller resurser som t ex kodfiler, länkar eller instruktioner. Filer som ligger direkt i Resources är resurser som gäller hela kunskapsbiblioteket och skall bara läggas till i undantagsfall. 
 
 ##### Resurskatalog
 Resurser skall i vanliga fall läggas under en katalog som ligger under Resources-katalogen. Katalogens namn blir namnet på resursen.
-Exempel 
+Om man vill lägga in en resurs med namnet Kodning så blir katalogstrukturen enligt nedan. 
 
     Resources/Kodning
+
+
 
 ### Filtyper
 Lagra i första hand textfiler i kunskapsbiblioteket.
