@@ -11,6 +11,7 @@ Resources innehåller resurser som t ex kodfiler, länkar eller instruktioner. F
 ##### Resurskatalog
 Resurser skall i vanliga fall läggas under en katalog som ligger under Resources-katalogen. Katalogens namn blir namnet på resursen.
 Exempel 
+
     Resources/Kodning
 
 ### Filtyper
