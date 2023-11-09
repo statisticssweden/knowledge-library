@@ -1,1 +1,13 @@
-# Analys - OLAP
+# Datasetanalyser, Olap
+OLAP står för "Online Analytical Processing" och är en teknik för att hantera och analysera stora mängder data på ett sådant sätt att användarna kan utföra komplexa analyser, utforska data och få insikter på ett interaktivt sätt. OLAP-system är särskilt användbara för affärsanalyser och beslutsstöd.
+
+## Här är några viktiga egenskaper och begrepp i samband med OLAP:
+
+* Multidimensionell datahantering: OLAP-databaser organiserar data i flera dimensioner, som till exempel tid, produkt, plats och andra relevanta aspekter. Detta gör det enklare att analysera data från olika perspektiv.
+* Kuber: OLAP-databaser lagrar data i så kallade "kuber", som är en samling av multidimensionelldata. Varje kub innehåller data för en specifik aspekt av företagsverksamheten, som försäljning, lager, eller ekonomi.
+* Slicing, Dicing och Pivoting: Användare kan "skära" (slice) och "tärna" (dice) data i en kub för att fokusera på specifika delar av informationen. De kan också "vrida" (pivot) data för att ändra perspektivet och se data på olika sätt.
+* Snabba svarstider: OLAP-databaser är optimerade för att ge snabba svar på användarens frågor, även när de analyserar stora datamängder.
+* Aggregat och summeringar: OLAP-system kan snabbt beräkna aggregat och summeringar av data, vilket gör det enkelt att se översiktlig information och identifiera trender och mönster.
+* Dimensioner och hierarkier: OLAP-databaser stöder dimensioner och hierarkier, vilket innebär att användare kan utforska data på olika nivåer av detaljer, från sammanfattade nivåer ner till detaljerade poster.
+* Extraktion och rapportering: OLAP-system gör det möjligt att extrahera och generera rapporter baserat på analyserade data. Detta underlättar beslutsfattande och affärsanalys.
+* OLAP är särskilt användbart för organisationer som behöver göra avancerad affärsanalys och upprätthålla stora datamängder. Det finns olika OLAP-lösningar och verktyg tillgängliga för att stödja dessa typer av analytiska behov.
