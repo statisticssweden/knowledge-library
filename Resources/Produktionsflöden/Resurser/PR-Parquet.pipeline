@@ -1,0 +1,320 @@
+{
+  "doc_type": "pipeline",
+  "version": "3.0",
+  "json_schema": "http://api.dataplatform.ibm.com/schemas/common-pipeline/pipeline-flow/pipeline-flow-v3-schema.json",
+  "id": "elyra-auto-generated-pipeline",
+  "primary_pipeline": "primary",
+  "pipelines": [
+    {
+      "id": "primary",
+      "nodes": [
+        {
+          "id": "568e7a13-7c9e-49c9-9835-227f0679fd08",
+          "type": "execution_node",
+          "op": "execute-notebook-node",
+          "app_data": {
+            "component_parameters": {
+              "dependencies": [],
+              "include_subdirectories": false,
+              "outputs": [
+                "pipeline-tx.parquet"
+              ],
+              "env_vars": [],
+              "kubernetes_pod_annotations": [],
+              "kubernetes_pod_labels": [],
+              "kubernetes_secrets": [],
+              "kubernetes_shared_mem_size": {},
+              "kubernetes_tolerations": [],
+              "mounted_volumes": [],
+              "filename": "01-P-WriteParquet.ipynb",
+              "runtime_image": "amancevice/pandas@sha256:f74bef70689b19d3cd610ef67227fce1c9a6ed8fa950ac2aff39ce72310d5520"
+            },
+            "label": "",
+            "ui_data": {
+              "label": "01-P-WriteParquet.ipynb",
+              "image": "/static/elyra/notebook.svg",
+              "x_pos": 153,
+              "y_pos": 423,
+              "description": "Run notebook file"
+            }
+          },
+          "inputs": [
+            {
+              "id": "inPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Input Port"
+                }
+              }
+            }
+          ],
+          "outputs": [
+            {
+              "id": "outPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Output Port"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "75908212-28e8-44e4-800d-fe380b67c08c",
+          "type": "execution_node",
+          "op": "execute-notebook-node",
+          "app_data": {
+            "component_parameters": {
+              "dependencies": [],
+              "include_subdirectories": false,
+              "outputs": [],
+              "env_vars": [
+                {
+                  "env_var": "JUPYTERLAB_S3_ENDPOINT"
+                },
+                {
+                  "env_var": "JUPYTERLAB_S3_ACCESS_KEY_ID"
+                },
+                {
+                  "env_var": "JUPYTERLAB_S3_SECRET_ACCESS_KEY"
+                }
+              ],
+              "kubernetes_pod_annotations": [],
+              "kubernetes_pod_labels": [],
+              "kubernetes_secrets": [],
+              "kubernetes_shared_mem_size": {},
+              "kubernetes_tolerations": [],
+              "mounted_volumes": [],
+              "filename": "02-P-PushToS3.ipynb",
+              "runtime_image": "amancevice/pandas@sha256:f74bef70689b19d3cd610ef67227fce1c9a6ed8fa950ac2aff39ce72310d5520"
+            },
+            "label": "",
+            "ui_data": {
+              "label": "02-P-PushToS3.ipynb",
+              "image": "/static/elyra/notebook.svg",
+              "x_pos": 396,
+              "y_pos": 420,
+              "description": "Run notebook file"
+            }
+          },
+          "inputs": [
+            {
+              "id": "inPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Input Port"
+                }
+              },
+              "links": [
+                {
+                  "id": "e18a87c2-7fbd-491e-8592-f9441c727ac9",
+                  "node_id_ref": "568e7a13-7c9e-49c9-9835-227f0679fd08",
+                  "port_id_ref": "outPort"
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "id": "outPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Output Port"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "2911f545-ebac-4a02-b6fa-0e17879d58ce",
+          "type": "execution_node",
+          "op": "execute-notebook-node",
+          "app_data": {
+            "component_parameters": {
+              "dependencies": [],
+              "include_subdirectories": false,
+              "outputs": [
+                "pipeline-rx.parquet"
+              ],
+              "env_vars": [
+                {
+                  "env_var": "JUPYTERLAB_S3_ACCESS_KEY_ID"
+                },
+                {
+                  "env_var": "JUPYTERLAB_S3_SECRET_ACCESS_KEY"
+                },
+                {
+                  "env_var": "JUPYTERLAB_S3_ENDPOINT"
+                },
+                {
+                  "env_var": "AWS_S3_ENDPOINT"
+                },
+                {
+                  "env_var": "AWS_DEFAULT_REGION"
+                },
+                {
+                  "env_var": "AWS_ACCESS_KEY_ID"
+                },
+                {
+                  "env_var": "AWS_SECRET_ACCESS_KEY"
+                }
+              ],
+              "kubernetes_pod_annotations": [],
+              "kubernetes_pod_labels": [],
+              "kubernetes_secrets": [],
+              "kubernetes_shared_mem_size": {},
+              "kubernetes_tolerations": [],
+              "mounted_volumes": [],
+              "filename": "03-R-PullFromS3.ipynb",
+              "runtime_image": "jupyter/r-notebook@sha256:08b7c3a1be31deac36cd9d65db6f6a4d58dc0cba32087101f3166d093c1a9c82"
+            },
+            "label": "",
+            "ui_data": {
+              "label": "03-R-PullFromS3.ipynb",
+              "image": "/static/elyra/notebook.svg",
+              "x_pos": 636,
+              "y_pos": 417,
+              "description": "Run notebook file"
+            }
+          },
+          "inputs": [
+            {
+              "id": "inPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Input Port"
+                }
+              },
+              "links": [
+                {
+                  "id": "5aff0836-6a87-40e2-bf73-6298963b7f12",
+                  "node_id_ref": "75908212-28e8-44e4-800d-fe380b67c08c",
+                  "port_id_ref": "outPort"
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "id": "outPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Output Port"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "5425313d-d5f4-454d-a428-6b7f0e51762a",
+          "type": "execution_node",
+          "op": "execute-notebook-node",
+          "app_data": {
+            "component_parameters": {
+              "dependencies": [],
+              "include_subdirectories": false,
+              "outputs": [],
+              "env_vars": [],
+              "kubernetes_pod_annotations": [],
+              "kubernetes_pod_labels": [],
+              "kubernetes_secrets": [],
+              "kubernetes_shared_mem_size": {},
+              "kubernetes_tolerations": [],
+              "mounted_volumes": [],
+              "filename": "04-R-ReadParquet.ipynb",
+              "runtime_image": "jupyter/r-notebook@sha256:08b7c3a1be31deac36cd9d65db6f6a4d58dc0cba32087101f3166d093c1a9c82"
+            },
+            "label": "",
+            "ui_data": {
+              "label": "04-R-ReadParquet.ipynb",
+              "image": "/static/elyra/notebook.svg",
+              "x_pos": 892,
+              "y_pos": 415,
+              "description": "Run notebook file"
+            }
+          },
+          "inputs": [
+            {
+              "id": "inPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Input Port"
+                }
+              },
+              "links": [
+                {
+                  "id": "f136e5cd-6943-4176-981d-100910f29f25",
+                  "node_id_ref": "2911f545-ebac-4a02-b6fa-0e17879d58ce",
+                  "port_id_ref": "outPort"
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "id": "outPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Output Port"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "app_data": {
+        "ui_data": {
+          "comments": []
+        },
+        "version": 8,
+        "properties": {
+          "name": "PR-Parquet",
+          "runtime": "Generic",
+          "pipeline_defaults": {
+            "kubernetes_shared_mem_size": {},
+            "kubernetes_pod_annotations": [],
+            "kubernetes_pod_labels": [],
+            "mounted_volumes": [],
+            "kubernetes_tolerations": [],
+            "env_vars": [],
+            "kubernetes_secrets": []
+          }
+        }
+      },
+      "runtime_ref": ""
+    }
+  ],
+  "schemas": []
+}
