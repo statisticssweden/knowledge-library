@@ -1,1 +1,0 @@
-# Python - Månadsproduktion enligt SPS
