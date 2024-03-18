@@ -1,1 +1,1 @@
-# Katalog för resurser
+# Katalog för resurser.
