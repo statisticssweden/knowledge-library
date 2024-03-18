@@ -1,0 +1,6 @@
+{
+    "name": "DataportalXML",
+    "git":"https://github.com/statisticssweden/DataportalXML.git",
+    "description": "DataportalXML is a tool for generating RDF/XML-files based on the DCAT-AP-SE standard.",
+    "tags": ["example"]
+}
