@@ -2,11 +2,11 @@
 
 ## Struktur på innehåll i kunskapsbiblioteket
 Kunskapsbiblioteket innehåller två huvudtyper av information. Den första typen är *resurser* och det andra är länkar till *mallar* eller *exempelprojekt*.
-Resurser lagras under katalogen ```Resources``` och länkar till *mallar* och *exempelprojekt* lagras i katalogen ```ProjectLinks``` 
+Resurser lagras under katalogen ```Resources``` och länkar till *mallar* och *exempelprojekt* lagras i katalogen ```Templates``` 
 
     README.md <-- Denna fil
     Resources <-- Katalog för resurser
-    ProjectLinks <-- Katalog för länkar till mallar och exempelprojekt
+    Templates <-- Katalog för länkar till mallar och exempelprojekt
 
 ### Resurser
 Resurser lagras i katalogen Resources. Exempel på resurser kan vara kodfiler, länkar eller instruktioner. Filer som ligger direkt i Resources är resurser som gäller hela kunskapsbiblioteket och skall läggas till sparsamt. Exempel på en sådan fil kan vara en länk till SCBs verksamhetsstöd.
