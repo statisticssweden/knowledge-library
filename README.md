@@ -5,8 +5,13 @@ Kunskapsbiblioteket innehåller två huvudtyper av information. Den första type
 Resurser lagras under katalogen ```Resources``` och länkar till *mallar* och *exempelprojekt* lagras i katalogen ```Templates``` 
 
     README.md <-- Denna fil
+    Articles <-- Katalog för artiklar. 
     Resources <-- Katalog för resurser
     Templates <-- Katalog för länkar till mallar och exempelprojekt
+
+### Artiklar
+En artikel kan handla om vad som helst och skrivs i markdown-format. 
+Artiklarna kan ordnas under kataloger med ett namn som beskriver omrdådet artiklarna handlar om.
 
 ### Resurser
 Resurser lagras i katalogen Resources. Exempel på resurser kan vara kodfiler, länkar eller instruktioner. Filer som ligger direkt i Resources är resurser som gäller hela kunskapsbiblioteket och skall läggas till sparsamt. Exempel på en sådan fil kan vara en länk till SCBs verksamhetsstöd.
