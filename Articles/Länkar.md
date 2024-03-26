@@ -1,4 +1,4 @@
-# Projektlänkar
+# Länkar
 
 * [SPS](https://sps.scb.se/sites/vstod/statprod/Sidor/SPS_Start.aspx)
 * [Dokumentation - scb.se](https://scb.se/Dokumentation/)
