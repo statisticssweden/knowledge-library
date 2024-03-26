@@ -22,7 +22,10 @@ Mallar och exempel är till skillnad från Resurser hela repositorys som kan fun
  - Exempel lämpar sig väl för utbildnings och träningssyfte.
  - Mallar lämpar sig väl om man vill underlätta att skapa upp en viss typ av projekt.
 
+ Vill du se vad mallen innehålelr och få mer information om den kan du klicka på GIT-länken på mall-kortet. 
+
  För att skapa ett projekt utifrån en mall eller ett projekt så kan man antingen gå in på Mallar och Exempel och välja Skapa Projekt på den mall eller det projekt man vill utgå ifrån. Mallen eller exemplet blir då förifyllt i dialogen för att skapa ett projekt.
 
-# Redigera kunskapsbibliotek
+
+## Redigera kunskapsbibliotek
 Information hur man redigerar ett kunskapsbibliotek finns under README.MD
