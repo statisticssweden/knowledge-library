@@ -3,5 +3,5 @@
     "git":"https://github.com/statisticssweden/UrbanAIZE.git",
     "html": "https://github.com/statisticssweden/UrbanAIZE",
     "description": "Projektet Urbanaize identifierade, vektoriserade, klassificerade och koordinatsatte objekt i gamla kartbilder med hjälp av AI.",
-    "tags": ["example"]
+    "tags": ["Exempel"]
 }

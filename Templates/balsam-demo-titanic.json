@@ -1,0 +1,7 @@
+{
+    "name": "Demo ML Titanic",
+    "git":"https://github.com/statisticssweden/balsam-demo-titanic.git",
+    "html": "https://github.com/statisticssweden/balsam-demo-titanic",
+    "description": "Demoprojekt som visar hur man kan använda Machine Learning",
+    "tags": ["Demo", "ML"]
+}

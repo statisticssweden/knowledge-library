@@ -1,0 +1,7 @@
+{
+    "name": "Mall ML",
+    "git":"https://github.com/statisticssweden/balsam-demo-titanic.git",
+    "html": "https://github.com/statisticssweden/balsam-demo-titanic",
+    "description": "Demoprojekt för imputering i normalproduktion",
+    "tags": ["Mall", "Normalproduktion"]
+}
