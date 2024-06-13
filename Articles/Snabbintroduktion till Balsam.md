@@ -3,7 +3,9 @@
 
 ## Vad är BALSAM
 
-Bearbetning och Analys i Samverkan (BALSAM) är en SCB-utvecklad beräknings- och analysplattform. Plattformen baseras på open source-komponenter, GitLab för versionshantering, Minio för datalagring med mera. Plattformen är tänkt att användas för utveckling och drift av ML-metoder, test av datakällor och för annat innovativt arbete samt för produktion baserad på R och Python. 
+Bearbetning och Analys i Samverkan (BALSAM) är en SCB-utvecklad beräknings- och analysplattform som är speciellt utformad för att stödja innovationsarbete, analysverksamhet och bearbetning av data. Den erbjuder en robust miljö för att arbeta med maskininlärning och avancerad dataanalys, vilket gör den idealisk för att förbättra och effektivisera statistikproduktionsprocessen.
+
+Plattformen baseras på open source-komponenter, inklusive GitLab för versionshantering och Minio för datalagring. Den är tänkt att användas för utveckling och drift av ML-metoder, test av datakällor och för annat innovativt arbete samt för produktion baserad på R och Python. Genom att använda BALSAM kan vi på ett effektivt sätt utföra dataanalyser och utveckla nya metoder och modeller inom statistik och maskininlärning.
 
 Bearbetningar på SCB ska genomföras så att de efterlever ställda krav på säkerhet, spårbarhet och reproducerbarhet. Bearbetningarna ska också samverka med den statistiska infrastrukturen MINK, UDB, pakethantering och datalagring.
 
@@ -66,9 +68,44 @@ Följande exempelprojekt visar på den breda omfattningen av SCB:s arbete och ro
 
 ## Introduktion till Elyramiljön
 
-Elyramiljön är en del av vår IT-infrastruktur som stödjer databehandling och analys. Den erbjuder en robust och skalbar miljö för att hantera stora datamängder.
+## Introduktion till Elyramiljön
+
+ElyraAI är en version av JupyterLab som används i vår miljö. Denna plattform är speciellt utformad för att underlätta utvecklingen av dataanalys- och maskininlärningsprojekt genom att erbjuda kraftfulla verktyg och funktioner inom en notebook-miljö.
+
+### Vad är ElyraAI?
+
+ElyraAI bygger på JupyterLab, en interaktiv utvecklingsmiljö som tillåter användare att skapa och dela dokument som innehåller live-kod, ekvationer, visualiseringar och berättande text. ElyraAI utökar JupyterLab med ytterligare funktioner som gör det enklare att arbeta med dataanalys och maskininlärning.
+
+### Funktioner i ElyraAI
+
+- **Notebooks**: Interaktiva dokument där du kan skriva och köra kod, dokumentera ditt arbete och visualisera data.
+- **Pipeline Editor**: Ett verktyg för att skapa och hantera data pipelines grafiskt, vilket gör det enklare att organisera och reproducera dina arbetsflöden.
+- **Git Integration**: Enkel versionshantering och samarbete genom inbyggd Git-support.
+
+### Användning av notebooks
+
+I notebook-miljön kan du:
+
+- **Skriva kod**: Stöd för flera programmeringsspråk, inklusive Python och R.
+- **Köra kodceller**: Exekvera enstaka celler eller hela notebooks för att se resultat direkt.
+- **Visualisera data**: Använd inbyggda verktyg och bibliotek för att skapa grafer och diagram.
+- **Dokumentera**: Lägg till markdown-celler för att skriva text, kommentarer och förklaringar tillsammans med koden.
+
+ElyraAI gör det möjligt att skapa komplexa dataanalys- och maskininlärningsprojekt på ett strukturerat och effektivt sätt. Genom att använda ElyraAI kan vi dra nytta av en kraftfull, integrerad utvecklingsmiljö som stödjer hela arbetsflödet från dataimport och bearbetning till modellutveckling och visualisering. Detta bidrar till att uppnå syftet med BALSAM, som är att stödja innovationsarbete, analysverksamhet och bearbetning av data på ett säkert, spårbart och reproducerbart sätt. ElyraAI möjliggör effektiv hantering av dataanalyser och utveckling av nya metoder och modeller inom statistik och maskininlärning, i linje med SCB:s krav och den statistiska infrastrukturen MINK, UDB, pakethantering och datalagring.
+
 
 ## Versionshantering
+
+Versionshantering av kod är processen att hantera och dokumentera förändringar i kod över tid. Detta gör det möjligt att följa kodändringar, återgå till tidigare versioner och säkerställa att alla utvecklare arbetar med samma version av koden. Versionshantering är viktig för reproducerbarhet, kodgranskning och underlättar förståelsen av förändringar för de som tar över ansvar för ett kodprojekt.
+
+På SCB används godkända versionshanteringssystem för att utveckla, förvalta och ändra produktionskod. Dessa system stödjer arbete med flera olika versioner av koden, vilket möjliggör parallella kodändringar och tydliggör vilken kod som är i produktion och vilken som är under utveckling. Kodändringar görs i separata versioner och dokumenteras noggrant.
+
+Riktlinjer för kodändringar:
+- Varje kodändring ska representera en enskild ändring (t.ex. buggfix eller specifik funktionsförbättring).
+- Ändringar ska dokumenteras med informativ text som sammanfattar syftet och beskriver ändringen.
+- Implementering av kodändringar i huvudversionen ska föregås av tester som säkerställer korrekt funktion.
+- Tekniska aspekter och beroenden, som parametervärden och paketversioner, ska versionshanteras för att säkerställa reproducerbarhet.
+
 
 ### Git kommandon
 
