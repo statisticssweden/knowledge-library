@@ -46,9 +46,20 @@ En balsaminstallation kan vara uppkopplad mot ett eller flera kunskapsbibliotek 
 
 Artiklarna i kunskapsbiblioteket beskriver olika ämnen och är ordnade i mappar eller kategorier. Resurser är mindre samlingar av kodfiler som kan exekveras utan externa beroenden, till exempel exempel på bearbetningsflöden eller analyser. Dessa resurser kan kopieras till ett projekt för vidare utveckling och läggs i katalogen Resources i projektets repository. Om du vill arbeta vidare med en resurs bör filerna flyttas från Resources till en annan lämplig plats i repositoryt.
 
-Mallar och exempel är hela repositorys som kan användas som grund för nya projekt. Exempel lämpar sig väl för utbildning och träning, medan mallar underlättar skapandet av nya projekt. För att skapa ett projekt utifrån en mall eller ett exempel, gå in på Mallar och Exempel och välj Skapa Projekt på den mall eller det exempel du vill använda. Mallen eller exemplet blir då förifyllt i dialogen för att skapa ett projekt.
+### Exempelprojekt
 
-Information om hur man redigerar ett kunskapsbibliotek finns i README.MD.
+Exempelprojekt refererar till ett projekt som används som ett exempel eller modell för att demonstrera hur ett projekt kan struktureras och genomföras. Detta kan innefatta beskrivning av projektets mål, omfattning, tidsplan, resurser och metoder. Exempelprojekt används ofta i utbildningssyfte, för att ge studenter eller nyanställda en konkret förståelse av projektledning och för att visa bästa praxis inom ett specifikt område. Det kan också användas i projektförslag för att illustrera en potentiell väg framåt eller i handledningar för att ge praktisk vägledning.
+
+På SCB används strukturerade metoder och projekt, inklusive insamling, validering och analys av data, samt publicering av resultaten i rapporter på deras webbplats.
+
+Följande exempelprojekt visar på den breda omfattningen av SCB:s arbete och roll i att tillhandahålla pålitlig statistik för beslutsfattande och allmän information:
+
+- Regelbundna undersökningar för att samla in data om sysselsättning, arbetslöshet och andra arbetsmarknadsförhållanden i Sverige.
+- Kontinuerligt samla in och analysera priser på varor och tjänster för att mäta inflationen.
+- Insamling av omfattande data om befolkningens boendesituation, hushåll och bostäder.
+- Samla in och analysera data relaterade till miljö och ekonomi, som till exempel utsläpp av växthusgaser, resursanvändning och miljöutgifter.
+- Insamling och analys av data för att sammanställa bruttonationalprodukten (BNP) och andra ekonomiska indikatorer.
+
 
 ## Introduktion till Elyramiljön
 
