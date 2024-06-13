@@ -1,5 +1,5 @@
 # Skapa projekt
-När ett prjekt skapas skapas skapas även följande
+När ett projekt skapas skapas skapas även följande
 - Ett repository där du kan versionshantera din kod
 - En S3-bucket där du kan lagra filer som tillhör projektet
 
