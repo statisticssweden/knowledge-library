@@ -3,7 +3,10 @@
 
 ## Vad är BALSAM
 
-BALSAM är en plattform som är speciellt utformad för att stödja innovationsarbete, analysverksamhet och bearbetning av data. Den erbjuder en säker miljö för att arbeta med maskininlärning och avancerad dataanalys. Miljön är också utformad för att fungera som ett bra stöd för att förbättra och effektivisera kod för exempelvis statistikproduktion. BALSAM innehåller kraftfulla verktyg och stöd för att samarbeta i projekt och för att dra nytta av den samlade kompetensen kring bearbetning och analys av data genom det så kallade Kunskapsbiblioteket. Genom att använda BALSAM kan vi på ett effektivt sätt utföra dataanalyser och utveckla nya metoder och modeller inom statistik och maskininlärning.
+Bearbetning och Analys i Samverkan (BALSAM) är en SCB-utvecklad beräknings- och analysplattform. Plattformen baseras på open source-komponenter, GitLab för versionshantering, Minio för datalagring med mera. Plattformen är tänkt att användas för utveckling och drift av ML-metoder, test av datakällor och för annat innovativt arbete samt för produktion baserad på R och Python. 
+
+Bearbetningar på SCB ska genomföras så att de efterlever ställda krav på säkerhet, spårbarhet och reproducerbarhet. Bearbetningarna ska också samverka med den statistiska infrastrukturen MINK, UDB, pakethantering och datalagring.
+
 
 ### Vad är vad i BALSAM (beståndsdelarna i BALSAM)
 
