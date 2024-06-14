@@ -66,7 +66,6 @@ Följande exempelprojekt visar på den breda omfattningen av SCB:s arbete och ro
 - Insamling och analys av data för att sammanställa bruttonationalprodukten (BNP) och andra ekonomiska indikatorer.
 
 
-## Introduktion till Elyramiljön
 
 ## Introduktion till Elyramiljön
 
